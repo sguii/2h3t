@@ -1,3 +1,7 @@
+let num1 = "";
+let num2 ="";
+let valor ="";
+let temPonto = false 
 
 mensagem = (msg) => console.log(msg);
 soma = (a,b) => a + b;
@@ -11,9 +15,18 @@ mostrar_display = (msg)=> {
     document.getElementById("resultado").value = msg;
 }
 function digitando(tecla) {
-if (tecla == "."){
-    if
-}
+if (tecla == ".") { 
+    if(!temPonto){
     valor += tecla;
 mostrar_display(valor);
+ temPonto = true;
+}
+return;
+}
+ valor += tecla;
+ mostrar_display(valor);
+}
+function operaçao(op){
+executa = op;
+numl = valor;
 }
